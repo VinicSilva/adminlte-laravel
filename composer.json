@@ -1,0 +1,27 @@
+{
+  "name": "lbernardo/adminlte",
+  "description": "AdminLTE for Laravel",
+  "keywords": ["laravel", "adminlte", "admin"],
+  "authors": [
+    {
+      "name": "Lucas Brito",
+      "email": "lucas@fortics.com.br"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Lbernardo\\AdminLte\\" : "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Lbernardo\\AdminLte\\AdminServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "laravel/framework": "~5.1.12|~5.2.0|~5.3.0|~5.4.0|~5.5.0|~5.6.0",
+    "php": ">=5.5.9"
+  }
+}
