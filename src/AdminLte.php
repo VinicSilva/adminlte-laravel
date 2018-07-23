@@ -63,7 +63,7 @@ class AdminLte
                         $str .= '<li class="' . $activeLink . '">' . "\n";
                         $str .= '<a href="' . $hrefRoute . '">' . "\n";
                         $str .= '<i class="' . $menu['icon'] . '"></i>' . "\n";
-                        $str .= $menu['text'] . "\n";
+                        $str .= __($menu['text']) . "\n";
                         $str .= '</a>' . "\n";
                         $str .= '</li>' . "\n";
                     }
