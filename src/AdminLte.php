@@ -30,6 +30,7 @@ class AdminLte
                 $text = $config['text'];
                 $icon = $config['icon'];
                 $menus = isset($config['menus']) ? $config['menus'] : null;
+                $treeview = isset($config['menus']) ? 'treeview' : null;
                 // Verifica se tem menu para gerar lista de rotas
                 if ($menus) {
                     $namesRoutes = array_keys($menus);
@@ -47,7 +48,7 @@ class AdminLte
 
 
                 // Cria primeira link
-                $str .= '<li class="treeview ' . $active . '">' . "\n";
+                $str .= '<li class="'.$treeview.' ' . $active . '">' . "\n";
                 $str .= '<a href="' . $href . '">' . "\n";
                 $str .= '<i class="' . $icon . '"></i> <span>' . __($text) . '</span>' . "\n";
                 $str .= $menus ? '<span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>' . "\n" : null;
