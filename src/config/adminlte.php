@@ -10,6 +10,8 @@ return [
     "logo-lg" => "<b>Admin</b>LTE",
     // Skin usage [black, black-light, blue , blue-light, green, green-light, purple, purple-light, red, red-light, yellow, yellow-light]
     'skin' => 'red',
+    // As the "collapse" will appear on = open off = close
+    'collapse' => 'on',
     // use URL to be accessed by URL or use route to access by route name
     'menuRoute' => 'url',
     'menu' => [
