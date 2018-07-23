@@ -27,6 +27,11 @@ class AdminServiceProvider extends ServiceProvider
         // Configuration
         $this->publishes([
             __DIR__.'/config/adminlte.php' => config_path('adminlte.php'),
-        ]);
+        ],'config');
+        // Views
+        $this->publishes([
+            __DIR__."/resources/views" => resource_path("views/vendor/adminlte"),
+        ],'views');
+
     }
 }

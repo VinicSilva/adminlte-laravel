@@ -21,3 +21,8 @@ php artisan vendor:publish --tag=public --force
 ```bash
 php artisan vendor:publish --tag=config
 ```
+
+### Publish views
+```bash
+php artisan vendor:publish --tag=views
+```
