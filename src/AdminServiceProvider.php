@@ -33,5 +33,6 @@ class AdminServiceProvider extends ServiceProvider
             __DIR__."/resources/views" => resource_path("views/vendor/adminlte"),
         ],'views');
 
+
     }
 }
