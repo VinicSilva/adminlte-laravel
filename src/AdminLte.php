@@ -15,8 +15,9 @@ class AdminLte
     public static function menu($menuConfig = [])
     {
         $str = null;
+        $config = config("adminlte.menuRoute","url");
         // Nome da rota atual
-        if (config("adminlte.menuRoute","url") == "url")
+        if ($config == "url")
             $routeName = \Request::path();
         else
             $routeName = \Request::route()->getName();
@@ -39,12 +40,16 @@ class AdminLte
                 // Verifica se existe rota para verificar
                 if (isset($config['href'])) {
                     $href = self::getRoute($config['href']);
+                    $active = $config['href'] == $routeName ? 'active' : null;
                 }
 
                 // Verifica se rota atual esta na lista de rotas de menus
                 if (in_array($routeName, $namesRoutes)) {
                     $active = "menu-open active";
                 }
+
+
+
 
 
                 // Cria primeira link
